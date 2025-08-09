@@ -24,6 +24,7 @@ venv/
 .venv/
 ENV/
 env/
+.env
 
 # Django project files
 backend/db.sqlite3
