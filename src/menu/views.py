@@ -7,6 +7,8 @@ from .serializers import CategorySerializer, MenuSerializer, MenuAllSerializer, 
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from drf_spectacular.utils import extend_schema
 
+#Hallo
+
 class CategoryView(APIView):
     permission_classes = [AllowAny]
     @extend_schema(
@@ -22,6 +24,7 @@ class CategoryView(APIView):
         categories = Category.objects.all()
         serializer = CategorySerializer(categories, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
+
     
 class CategoryDetailView(APIView):
     permission_classes = [AllowAny]
