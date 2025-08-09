@@ -27,17 +27,17 @@ env/
 .env
 
 # Django project files
-backend/db.sqlite3
-backend/**/*.sqlite3
-backend/staticfiles/
-backend/media/
-backend/**/__pycache__/
-backend/**/migrations/__pycache__/
+db.sqlite3
+**/*.sqlite3
+staticfiles/
+media/
+**/__pycache__/
+**/migrations/__pycache__/
 
 # Environment files (backend)
-backend/.env
-backend/**/.env
-backend/config/.env
+.env
+**/.env
+config/.env
 
 # Test/coverage caches
 .pytest_cache/
