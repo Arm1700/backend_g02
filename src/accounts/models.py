@@ -2,12 +2,12 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 from .managers import UserManager
 
+#55000
 class User(AbstractUser):
     email = models.EmailField(unique=True)
     username = models.CharField(max_length=255, unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-
     objects = UserManager()
 
     USERNAME_FIELD = 'email'
